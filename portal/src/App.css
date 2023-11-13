@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background: #202020 !important;
-  width: 100vw;
+  position: relative;
 }
 /* Navbar.css */
 
@@ -13,20 +13,41 @@
   font-size: 17px;
 font-weight: 300;
   float: left;
+  position: fixed;
+  overflow:'hidden';
+  background-color: #202020;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
   margin: 0 30px;
+  background: #202020;
 }
 
 .navbar a:hover {
   text-decoration: underline;
 }
 .logo-adjuster{
-  padding-top: 300px;
+  width: 100%;
+  transition: transform 0.3s ease; 
+  padding-top: 450px;
+  position: relative;
+}
+.logo-adjuster.minimized {
+  transform: scale(0.5); /* Adjust the scale factor as needed */
 }
 
+
+.section-1{
+  color: #FFF;
+  margin-bottom:20px ;
+text-align: center;
+font-family: 'Poppins';
+font-size: 128px;
+font-style: normal;
+font-weight: 250;
+line-height: 139px; /* 108.594% */
+}
 
 
